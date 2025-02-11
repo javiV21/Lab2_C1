@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Laboratorio 2</title>
+</head>
+<body>
+    <h1>Acerca de Mí</h1>
+    <div class="container">
+        <div class="evento" onmouseover="cambiarColor(this)" onmouseout="restaurarColor(this)">Persona a quien admiro: mis padres<p>Evento: cambia color al pasar el mouse</p></div>
+        <div class="evento" onclick="mostrarMensaje('¡Estar en el estadio Santiago Bernabéu!')">Meta que quiero lograr<br><p>Evento: alerta al hacer click</p></div>
+        <div class="evento" ondblclick="cambiarTexto(this, 'Son, huasteca y huapango')">Género musical favorito<br><p>Evento: doble click para cambiar texto</p></div>
+        <div class="evento" onmouseenter="agrandar(this)" onmouseleave="restaurarTamanio(this)">Algo sin lo que no podría vivir: música<br><p>Evento: cambia tamaño al pasar el mouse</p></div>
+        <div class="evento" onfocus="resaltar(this)" onblur="quitarResalto(this)" tabindex="0">Un talento que poseo: ejecutar trompeta y vihuela<br><p>Evento: resaltar el borde con color al seleccionar con el mouse</p></div>
+        <div class="evento" oncontextmenu="cambiarFondo(event, this)">Mi animal favorito: loro<br><p>Evento: cambiar color al hacer click derecho</p></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
